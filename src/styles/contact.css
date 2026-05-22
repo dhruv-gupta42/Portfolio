@@ -1,0 +1,265 @@
+.contact-section {
+  width: 100vw;
+  background-color: var(--charcoal);
+  color: var(--coffee);
+  padding: 10vh 4vw 0 4vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 5vh;
+}
+
+.contact-huge-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: clamp(50px, 11vw, 200px); 
+  font-weight: 900;
+  line-height: 0.95; /* Increased to prevent clipping */
+  letter-spacing: -0.04em;
+  margin: 0;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-line-mask {
+  overflow: hidden;
+  display: flex;
+  padding-bottom: 0.1em; /* Add slight padding to prevent descender cutoffs */
+  padding-top: 0.1em; /* Add slight padding to prevent ascender cutoffs */
+}
+
+.contact-char {
+  will-change: transform, opacity;
+}
+
+.italic-red {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 900;
+  color: var(--red);
+}
+
+.indent {
+  margin-left: 15vw; /* classic editorial indent for visual flow */
+}
+
+.contact-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.contact-email-wrapper {
+  display: flex;
+  justify-content: center; /* Center the magnetic button */
+  padding: 2rem 0;
+}
+
+/* =========================================
+   MAGNETIC BUTTON STYLES
+   ========================================= */
+.magnetic-email {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw 4vw;
+  border: 4px solid rgba(232, 225, 215, 0.85);
+  border-radius: 0;
+  text-decoration: none;
+  cursor: pointer;
+  will-change: transform;
+}
+
+.magnetic-email::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--coffee);
+  border-radius: 0;
+  transform: scale(0);
+  transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 0;
+}
+
+.magnetic-email:hover::before {
+  transform: scale(1);
+}
+
+.magnetic-email-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: clamp(24px, 4vw, 60px);
+  color: var(--coffee);
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+  will-change: transform;
+}
+
+.magnetic-email:hover .magnetic-email-text {
+  color: var(--charcoal);
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.contact-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 4px solid rgba(232, 225, 215, 0.18);
+  padding-top: 2rem;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: rgba(232, 225, 215, 0.5); /* 50% opacity coffee */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.footer-value {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--cream);
+  text-transform: uppercase;
+}
+
+.socials {
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.socials a {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  color: var(--cream);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: var(--red);
+}
+
+.right {
+  align-items: flex-end;
+}
+
+/* =========================================
+   SIGNOFF FOOTER
+   ========================================= */
+.contact-signoff {
+  width: 100%;
+  margin-top: 8vh;
+  padding: 2rem 0 2.5rem;
+  border-top: 4px solid rgba(232, 225, 215, 0.18);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.signoff-brand,
+.signoff-availability {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.signoff-brand h3 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: clamp(34px, 5vw, 84px);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--red);
+  text-transform: uppercase;
+}
+
+.signoff-brand p,
+.signoff-availability p {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: var(--cream);
+}
+
+.signoff-availability span {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: rgba(232, 225, 215, 0.5);
+  letter-spacing: 0.1em;
+}
+
+.signoff-links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.signoff-links a {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--cream);
+  transition: color 0.3s ease;
+}
+
+.signoff-links a:hover {
+  color: var(--red);
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding-top: 15vh;
+  }
+  .indent {
+    margin-left: 0;
+  }
+  .magnetic-email {
+    padding: 1.5rem 3rem;
+  }
+  .contact-footer {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+  .right {
+    align-items: flex-start;
+  }
+  .socials {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contact-signoff {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .signoff-links {
+    flex-wrap: wrap;
+  }
+}

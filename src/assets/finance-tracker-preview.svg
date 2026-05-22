@@ -1,0 +1,61 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="820" fill="#F7F7F5"/>
+  <rect x="370" y="32" width="460" height="58" rx="29" fill="#FFFFFF" stroke="#D2D2D2"/>
+  <text x="420" y="68" font-family="Arial, sans-serif" font-size="20" fill="#FF9500">Home</text>
+  <text x="520" y="68" font-family="Arial, sans-serif" font-size="20" fill="#111111">Transactions</text>
+  <line x1="520" y1="75" x2="638" y2="75" stroke="#111111" stroke-width="2"/>
+  <text x="680" y="68" font-family="Arial, sans-serif" font-size="20" fill="#FF9500">Dashboard</text>
+  <text x="430" y="158" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#040404">Personal Finance Tracker</text>
+  <text x="42" y="250" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#050505">Financial Overview</text>
+  <g filter="url(#shadow)">
+    <rect x="42" y="292" width="258" height="150" rx="12" fill="#FFFFFF" stroke="#D8D8D8"/>
+    <text x="76" y="342" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111111">Total Balance</text>
+    <text x="76" y="408" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#111111">$5,350</text>
+    <text x="76" y="434" font-family="Arial, sans-serif" font-size="17" fill="#647084">From 5 transactions</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="330" y="292" width="258" height="150" rx="12" fill="#FFFFFF" stroke="#D8D8D8"/>
+    <text x="364" y="342" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111111">Income</text>
+    <text x="364" y="408" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#00A934">$6,500</text>
+    <text x="364" y="434" font-family="Arial, sans-serif" font-size="17" fill="#647084">Monthly analytics</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="618" y="292" width="258" height="150" rx="12" fill="#FFFFFF" stroke="#D8D8D8"/>
+    <text x="652" y="342" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111111">Expenses</text>
+    <text x="652" y="408" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#FF1E1E">$1,150</text>
+    <text x="652" y="434" font-family="Arial, sans-serif" font-size="17" fill="#647084">Spending insights</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="906" y="292" width="258" height="150" rx="12" fill="#FFFFFF" stroke="#D8D8D8"/>
+    <text x="940" y="342" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111111">Top Category</text>
+    <text x="940" y="408" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#111111">Other</text>
+    <text x="940" y="434" font-family="Arial, sans-serif" font-size="17" fill="#647084">Highest spending category</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="42" y="486" width="546" height="272" rx="12" fill="#FFFFFF" stroke="#D8D8D8"/>
+    <text x="76" y="540" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111111">Recent Transactions</text>
+    <text x="82" y="614" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111111">turf day 1</text>
+    <text x="500" y="614" font-family="Arial, sans-serif" font-size="22" fill="#FF1E1E">-$600</text>
+    <text x="82" y="658" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111111">bonus</text>
+    <text x="494" y="658" font-family="Arial, sans-serif" font-size="22" fill="#00A934">+$1,500</text>
+    <text x="82" y="702" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111111">office</text>
+    <text x="494" y="702" font-family="Arial, sans-serif" font-size="22" fill="#00A934">+$5,000</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="618" y="486" width="546" height="272" rx="12" fill="#FFFFFF" stroke="#D8D8D8"/>
+    <text x="652" y="540" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111111">Top Spending Categories</text>
+    <text x="662" y="614" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111111">Other</text>
+    <rect x="662" y="628" width="190" height="8" rx="4" fill="#E6E8EC"/>
+    <rect x="662" y="628" width="146" height="8" rx="4" fill="#2D7DF6"/>
+    <text x="1080" y="614" text-anchor="end" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111111">$7,100</text>
+    <text x="662" y="674" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111111">Fav Sports</text>
+    <rect x="662" y="688" width="120" height="8" rx="4" fill="#E6E8EC"/>
+    <rect x="662" y="688" width="58" height="8" rx="4" fill="#2D7DF6"/>
+    <text x="1080" y="674" text-anchor="end" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111111">$400</text>
+  </g>
+  <defs>
+    <filter id="shadow" x="30" y="280" width="1146" height="490" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+</svg>

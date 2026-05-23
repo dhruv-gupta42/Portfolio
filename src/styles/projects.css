@@ -54,6 +54,10 @@
   color: #00A934;
 }
 
+.awwwards-row.accent-cyan:hover .awwwards-title {
+  color: #35F5C5;
+}
+
 .awwwards-bg-img {
   position: absolute;
   inset: 0;
@@ -115,6 +119,10 @@
   text-align: center;
   transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), color 0.3s ease;
   will-change: transform;
+}
+
+.awwwards-title.title-boost {
+  font-size: clamp(58px, 9vw, 156px);
 }
 
 .awwwards-description {
@@ -276,6 +284,10 @@
   .awwwards-title {
     text-align: left;
     font-size: 48px;
+  }
+
+  .awwwards-title.title-boost {
+    font-size: 56px;
   }
 
   .awwwards-description {

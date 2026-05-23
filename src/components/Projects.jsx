@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import financeTrackerPreview from '../assets/finance-tracker-preview.svg';
 import resumeInterviewerPreview from '../assets/resume-interviewer-preview.svg';
+import cyberlabPreview from '../assets/cyberlab-preview.svg';
 import '../styles/projects.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -19,6 +20,7 @@ const projects = [
     github: 'https://github.com/dhruv-gupta42/Finance-Tracker',
     img: financeTrackerPreview,
     accent: 'green',
+    titleClass: 'title-boost',
   },
   {
     no: '02',
@@ -31,6 +33,18 @@ const projects = [
     github: 'https://github.com/dhruv-gupta42/Resume-Interviewer',
     img: resumeInterviewerPreview,
     accent: 'red',
+  },
+  {
+    no: '03',
+    name: 'CYBERLAB SCANNER',
+    role: 'Solo Full-Stack Developer',
+    description: 'A cybersecurity dashboard for real-time network and port scanning, local device discovery, scan history, risk analytics, and downloadable security reports.',
+    stack: ['Vite', 'React', 'MongoDB', 'Render', 'Netlify'],
+    highlights: ['Nmap-powered scanning', 'Local network device discovery', 'Downloadable security reports'],
+    live: 'https://cyberlabscanner.netlify.app/',
+    github: 'https://github.com/dhruv-gupta42/CyberLab',
+    img: cyberlabPreview,
+    accent: 'cyan',
   },
 ];
 
@@ -60,7 +74,7 @@ export default function Projects() {
       
       <div className="awwwards-header project-reveal">
         <h2>SELECTED WORKS</h2>
-        <p>[ {projects.length.toString().padStart(2, '0')} / 02 ]</p>
+        <p>[ {projects.length.toString().padStart(2, '0')} / 03 ]</p>
       </div>
 
       <div className="awwwards-list">
@@ -75,7 +89,7 @@ export default function Projects() {
             <div className="awwwards-row-content">
               <span className="awwwards-no">({proj.no})</span>
               <div className="awwwards-main">
-                <h3 className="awwwards-title">{proj.name}</h3>
+                <h3 className={`awwwards-title ${proj.titleClass || ''}`}>{proj.name}</h3>
                 <p className="awwwards-description">{proj.description}</p>
               </div>
               <span className="awwwards-role">{proj.role}</span>

@@ -51,7 +51,7 @@ const MagneticEmail = () => {
   }, []);
 
   return (
-    <a href="mailto:dhruv.gupta@gmail.com" className="magnetic-email" ref={wrapRef}>
+    <a href="mailto:dhruvguptaa42@gmail.com" className="magnetic-email" ref={wrapRef}>
       <span className="magnetic-email-text" ref={textRef}>dhruvguptaa42@gmail.com</span>
     </a>
   );
